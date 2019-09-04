@@ -1,6 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 
+
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',

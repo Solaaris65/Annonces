@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { RouterModule, Routes, Router } from '@angular/router';
 
 @Component({
@@ -9,7 +10,7 @@ import { RouterModule, Routes, Router } from '@angular/router';
 export class LoginPage implements OnInit {
   login : string;
   password : string ;
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -18,12 +19,14 @@ export class LoginPage implements OnInit {
   {
     if( this.login == this.password)
     {
-      this.router.navigate(['/home']);
+      this.router.navigate(['/camera']);
+     
     }
 
     else
     {
       this.router.navigate(['/login']);
+      console.log("ERREUUUURRRRR");
     }
   }
 
